@@ -1,22 +1,7 @@
 ---
 layout: default
-title: testje
 ---
-<h1>{{ page.title }}</h2>
-<h1>{{ site.title }}</h2>
 <ul>
     <li><a href="projectsByDate">Projects by Date</a></li>
     <li><a href="projectsByAlphabeticalTag">Projects by Tag (alphabetical)</a></li>
 </ul>
-{% if 3 > 4 %}
-<p>yey</p>
-{% endif %}
-{% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}({{ post.date }})</a>
-    </li>
-{% endfor %}
-<h2>again</h2>
-{% for post in site.posts %}
-<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
